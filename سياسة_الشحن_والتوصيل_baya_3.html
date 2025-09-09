@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>سياسة الشحن والتوصيل — Baya3</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0b74de;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6;margin:0;background:var(--bg);color:#111}
+    .container{max-width:900px;margin:36px auto;padding:20px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:84px;height:84px;flex:0 0 84px;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(11,116,222,0.12);background:#fff;display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:contain;border:0}
+    h1{font-size:22px;margin:0}
+    .meta{color:var(--muted);margin-top:6px;font-size:14px}
+    .card{background:var(--card);padding:22px;border-radius:12px;margin-top:18px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .section{margin-bottom:16px}
+    .section h2{font-size:18px;margin:0 0 8px}
+    ol,ul{padding-inline-start:20px;margin:8px 0}
+    li{margin:8px 0}
+    a.contact{color:var(--accent);text-decoration:none;font-weight:600}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    /* accordion */
+    .accordion .item{border-top:1px dashed #eef2f7;padding:12px 0}
+    .item button{width:100%;text-align:right;background:transparent;border:0;padding:8px 0;font-weight:700;cursor:pointer}
+    .item .content{max-height:0;overflow:hidden;transition:max-height .32s ease;padding-right:4px}
+    .item.open .content{max-height:1400px;margin-top:8px}
+    /* responsive */
+    @media (max-width:520px){.brand{gap:12px}.logo{width:64px;height:64px}}
+    @media print{body{background:#fff} footer{display:none} .card{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="brand">
+      <div class="logo" aria-hidden="true">
+        <a href="https://ibb.co/V5tw3FK" target="_blank">
+          <img src="https://i.ibb.co/V5tw3FK/20250823-2009-Baya3-simple-compose-01k3byee7sebaspd0vqs6bcy52-1.png" alt="شعار متجر baya3" border="0">
+        </a>
+      </div>
+      <div>
+        <h1>بـيـاع — سياسة الشحن والتوصيل</h1>
+        <div class="meta">آخر تحديث: سبتمبر 2025</div>
+      </div>
+    </header>
+
+    <article class="card" id="shipping">
+      <div class="accordion" style="margin-top:12px">
+
+        <div class="item open" id="item-1">
+          <button onclick="toggleSection(1)">1. مناطق التوصيل</button>
+          <div class="content">
+            <p>نقوم بشحن الطلبات إلى جميع المحافظات داخل جمهورية مصر العربية لضمان وصول منتجاتنا إليك أينما كنت، <strong>عدا بعض المناطق خارج التغطية</strong>.</p>
+            <p><strong>المناطق غير المشمولة:</strong> شمال وجنوب سيناء، الساحل الشمالي، الوادي الجديد، العريش، بالإضافة إلى بعض المناطق المحددة التالية:</p>
+            <ul>
+              <li>الإسماعيلية: القنطرة شرق، العين السخنة</li>
+              <li>مطروح: الضبعة، رأس الحكمة، براني، سيوة</li>
+              <li>العاصمة الإدارية</li>
+              <li>جنوب سيناء: نويبع، أبو زنيمة، أبو رديس</li>
+              <li>شمال سيناء: بئر العبد، العريش</li>
+              <li>الوادي الجديد: الداخلة، الخارجة، الفرافرة</li>
+              <li>حلايب وشلاتين</li>
+              <li>بني سويف: قرية أبو صير في مركز الواسطى</li>
+              <li>أسوان: أبو سمبل</li>
+              <li>الإسكندرية بعد كارتة العامرية: شمال التحرير، قرية أبو مسعود، البصرة، التحرير، النهضة</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item" id="item-2">
+          <button onclick="toggleSection(2)">2. مدة تجهيز وتوصيل الطلب</button>
+          <div class="content">
+            <p><strong>تجهيز الطلب:</strong> يتم تجهيز الطلب خلال 1-2 يوم عمل بعد تأكيد الدفع.</p>
+            <p><strong>مدة التوصيل:</strong> تتراوح بين 3-7 أيام عمل حسب المنطقة وموعد استلام الطلب. (ما عدا المناطق خارج التغطية).</p>
+          </div>
+        </div>
+
+        <div class="item" id="item-3">
+          <button onclick="toggleSection(3)">3. رسوم الشحن</button>
+          <div class="content">
+            <p>يتم احتساب رسوم شحن ثابتة أو حسب المسافة (سيتم تحديدها عند إتمام الطلب).</p>
+          </div>
+        </div>
+
+        <div class="item" id="item-4">
+          <button onclick="toggleSection(4)">4. تتبع الطلب</button>
+          <div class="content">
+            <p>بعد شحن الطلب، سيتم تزويدك برقم تتبع يمكنك من متابعة حالة شحنتك خطوة بخطوة حتى وصولها إليك.</p>
+          </div>
+        </div>
+
+        <div class="item" id="item-5">
+          <button onclick="toggleSection(5)">5. سياسة الاسترجاع والاستبدال</button>
+          <div class="content">
+            <p>في حال وجود عيب في المنتج أو خطأ في الطلب، يرجى التواصل معنا خلال 7 أيام من تاريخ الاستلام.</p>
+            <p>يجب إعادة المنتج بحالته الأصلية مع الفاتورة أو الإيصال.</p>
+            <p><strong>لا يشمل الاسترجاع:</strong> المنتجات المستخدمة أو التالفة بسبب سوء الاستخدام أو الإهمال.</p>
+          </div>
+        </div>
+
+        <div class="item" id="item-6">
+          <button onclick="toggleSection(6)">6. طرق الدفع</button>
+          <div class="content">
+            <p>الدفع عند الاستلام: متاح في المناطق التي نقدم فيها هذه الخدمة.</p>
+            <p>كما يمكنك الدفع إلكترونيًا عبر بطاقات الدفع أو وسائل الدفع الإلكترونية المتوفرة أثناء الطلب.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        حقوق الملكية © Baya3. جميع الحقوق محفوظة.
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    function toggleSection(n){
+      const el=document.getElementById('item-'+n);
+      if(!el) return;
+      el.classList.toggle('open');
+    }
+    document.addEventListener('DOMContentLoaded',()=>{ /* item-1 مفتوح افتراضياً */ });
+  </script>
+</body>
+</html>
